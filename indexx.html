@@ -1,0 +1,1915 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VSL Market — B2B Hair & Accessories Procurement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  
+   <style>
+    :root{
+      --purple:#6b2c73;
+      --purple-2:#7b3b88;
+      --orange:#f1662a;
+      --gold:#f6b71b;
+      --ink:#0e0e0f;
+      --white:#ffffff;
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#ffffff;
+      color:var(--ink);
+    }
+
+    /* layout */
+    .x84219{
+      width:min(1140px, 94vw);
+      margin:32px auto;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:56px;
+      align-items:start;
+    }
+
+    /* base card */
+    .x19374{
+      position:relative;
+      border-radius:var(--radius);
+      padding:28px;
+      min-height:320px;
+      overflow:visible;
+    }
+
+    /* variants */
+    .x49021{ background:var(--orange); }   /* orange left card */
+    .x77205{ background:var(--purple); }   /* middle purple head */
+    .x65930{ background:var(--purple-2); } /* right purple card */
+
+    /* plinth */
+    .x19374 .x31856{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:-16px;
+      width:88%;
+      height:18px;
+      background:var(--purple);
+      border-radius:14px;
+      opacity:.98;
+    }
+
+    /* badge */
+    .x94562{
+      position:absolute;
+      right:24px;
+      top:22px;
+      width:70px; height:70px;
+      border-radius:50%;
+      background:var(--white);
+      display:grid; place-items:center;
+      box-shadow:0 2px 0 rgba(0,0,0,0.05);
+    }
+
+    /* headings */
+    .x20641{
+      margin:6px 0 12px;
+      font-size:52px;
+      line-height:.94;
+      font-weight:800;
+      letter-spacing:-1px;
+    }
+    .x70011{ color:#fff; }
+    .x70012{ color:#111; }
+
+    /* description */
+    .x51290{
+      margin:12px 0 16px;
+      font-size:16px;
+      line-height:1.45;
+      font-weight:700;
+      max-width:40ch;
+    }
+    .x70021{ color:rgba(255,255,255,.94); }
+    .x70022{ color:#1a1a1a; }
+
+    /* buttons */
+    .x88001{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      height:48px;
+      padding:0 22px;
+      border-radius:12px;
+      font-weight:800;
+      font-size:16px;
+      text-decoration:none;
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .x88001:hover{ transform:translateY(-2px); }
+    .x88001:active{ transform:translateY(-1px); }
+
+    .x88002{ background:#fff; color:#111; border:2px solid #111; } /* dark outline */
+    .x88003{ background:transparent; color:#fff; border:2px solid #fff; } /* white outline */
+
+    /* brand stacked middle card specifics */
+    .x33007{
+      padding:34px 32px 56px;
+      border-radius:var(--radius) var(--radius) 0 0;
+      position:relative;
+      text-align:center;
+      color:#fff;
+    }
+    .x11447{
+      font-weight:800;
+      letter-spacing:6px;
+      font-size:30px;
+      opacity:.98;
+    }
+    .x55773{
+      position:absolute;
+      right:18px; top:16px;
+      display:inline-grid; place-items:center;
+    }
+    .x66432{
+ background: var(--gold);
+    color: #4e225c;
+    border-radius: var(--radius);
+    padding: 22px 26px 18px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    width: 396px;
+    margin-left: -57px;
+    margin-top: -28px;
+    }
+    .x66432 h3{
+      margin:2px 0 10px;
+      font-size:26px;
+      line-height:1.05;
+      font-weight:800;
+    }
+    .x66432 p{
+      margin:0 0 12px;
+      font-weight:700;
+    }
+    .x22119{
+      color:#4e225c;
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    /* responsive */
+    @media (max-width:1000px){
+      .x84219{ grid-template-columns:1fr; gap:42px; }
+      .x20641{ font-size:46px; }
+    }
+  </style>
+  <style>
+    :root{
+      --purple-1:#5b1f4a;    /* primary dark purple */
+      --purple-2:#7b2f66;    /* lighter purple for accents */
+      --accent:#f4b621;      /* yellow CTA */
+      --accent-dark:#d9a71a; /* darker gold for gradient */
+      --muted:#f6f1f4;
+      --card-shadow: rgba(69,18,62,0.85);
+      --bg:#ffffff;
+      --radius:18px;
+      --transition:300ms cubic-bezier(.2,.9,.2,1);
+      --content-max:1200px;
+      --header-height:64px; /* updated by JS on load/resize */
+    }
+	
+	:root{
+  --purple:#6b2c73;      /* main purple */
+  --purple-2:#7b3b88;    /* lighter purple used in right card bg from image */
+  --orange:#f1662a;      /* left card bg */
+  --gold:#f7b41b;        /* brand panel */
+  --ink:#111216;         /* near-black text */
+  --white:#fff;
+  --radius:22px;         /* image shows generous rounding */
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:#ffffff;
+  color:var(--ink);
+}
+
+/* layout approximates the spacing in the screenshot */
+.wrap{
+  width:min(1080px, 96vw);
+  margin:32px auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:64px;
+}
+
+/* base card */
+.card{
+  position:relative;
+  min-height:305px;
+  border-radius:20px;
+  padding:28px;
+}
+
+/* solid “plinth” base under card (not a blur shadow) */
+.card .plinth{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-18px;
+  width:86%;
+  height:18px;
+  background:var(--purple);
+  border-radius:16px;
+  opacity:.95;
+}
+
+/* badges (white circle top-right) */
+.badge{
+  position:absolute;
+  right:24px;
+  top:22px;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#fff;
+  display:grid;
+  place-items:center;
+  box-shadow:0 2px 0 rgba(0,0,0,0.04);
+}
+
+}
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:#222;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      overflow-x: hidden; /* prevent horizontal scroll when using full-bleed cards */
+    }
+
+    /* ---------- HEADER ---------- */
+    .topbar{
+      background:#fff; /* landing view: white */
+      border-bottom:1px solid #eee;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 32px;
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index:120;
+      margin:0;
+      height:var(--header-height);
+      transition: background-color 240ms ease, color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+    }
+    /* SCROLLED STATE: purple header with white text */
+    .topbar.scrolled{
+background: linear-gradient(180deg, #25091d 0%, #3d0649 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 24px rgba(91, 31, 74, 0.22)
+    }
+    .topbar.scrolled .logo{ color:#fff; }
+    .topbar.scrolled .call{ color:#fff; }
+    .topbar.scrolled nav a{ color:rgba(255,255,255,0.95); }
+    .topbar.scrolled nav a:hover,
+    .topbar.scrolled nav a:focus{ color:#fff; background:rgba(255,255,255,0.10); }
+    .topbar.scrolled .menu-toggle{
+      background:transparent; border-color:rgba(255,255,255,0.35); color:#fff;
+    }
+    /* Pay button switches colors on scroll */
+    .topbar.scrolled .btn-pay{
+      background:#ffffff; color:var(--purple-1);
+      box-shadow:0 8px 18px rgba(0,0,0,0.14);
+    }
+    .topbar.scrolled .btn-pay:hover{ transform:translateY(-3px); box-shadow:0 10px 22px rgba(0,0,0,0.18) }
+
+    /* Multi-color faded doodles behind header (brand colors, subtle) */
+    .topbar::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        radial-gradient(160px 70px at 12% 60%, rgba(123,47,102,.14), rgba(123,47,102,0) 70%), /* --purple-2 */
+        radial-gradient(220px 90px at 78% 20%, rgba(244,182,33,.16), rgba(244,182,33,0) 65%), /* --accent */
+        radial-gradient(180px 80px at 90% 75%, rgba(91,31,74,.14),  rgba(91,31,74,0) 70%),   /* --purple-1 */
+        radial-gradient(140px 60px at 35% 20%, rgba(255,255,255,.18), rgba(255,255,255,0) 60%),
+        conic-gradient(from 210deg at 85% 30%, rgba(244,182,33,.12), rgba(123,47,102,.10), rgba(244,182,33,.12));
+      mix-blend-mode:multiply; /* over white header */
+      opacity:1;
+      transition:opacity 240ms ease, mix-blend-mode 240ms ease;
+    }
+    .topbar.scrolled::before{
+      mix-blend-mode:screen; /* lift over purple gradient */
+      opacity:.22;
+    }
+
+    .top-left{display:flex;align-items:center;gap:20px}
+    .logo{
+      font-weight:800;
+      letter-spacing:1px;
+      color:var(--purple-1);
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:20px;
+      transition: color 200ms ease;
+    }
+    .logo .box{
+      width:20px;height:20px;border-radius:4px;background:linear-gradient(135deg,#ffd05b,#f4b621);
+      display:inline-block;
+    }
+    nav{
+      display:flex;
+      gap:24px;
+      align-items:center;
+    }
+    nav a{
+      color:#666;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      padding:6px 4px;
+      border-radius:6px;
+      transition: color 180ms ease, background 180ms ease;
+      outline: none;
+    }
+    nav a:hover,
+    nav a:focus{
+      color:var(--purple-1);
+      background:transparent;
+    }
+    nav a.active{
+      color:var(--purple-1);
+      font-weight:800;
+      text-decoration:underline 2px solid rgba(123,47,102,0.12);
+    }
+
+    .right-ctas{display:flex;align-items:center;gap:14px}
+    .call{
+      color:var(--purple-2);
+      font-weight:600;
+      font-size:14px;
+      transition: color 200ms ease;
+    }
+    .btn-pay{
+      background:var(--accent);
+      color:#222;
+      padding:10px 18px;
+      border-radius:22px;
+      font-weight:700;
+      border:none;
+      cursor:pointer;
+      box-shadow:0 2px 0 rgba(0,0,0,0.08);
+      transition:transform var(--transition), box-shadow var(--transition), background-color 240ms ease, color 240ms ease;
+    }
+    .btn-pay:hover{transform:translateY(-3px); box-shadow:0 8px 18px rgba(0,0,0,0.12)}
+
+    .menu-toggle{
+      display:none;
+      align-items:center;
+      gap:6px;
+      border-radius:8px;
+      padding:8px 10px;
+      background:#fff;
+      border:1px solid #eee;
+      cursor:pointer;
+      font-weight:700;
+      color:var(--purple-2);
+      transition: border-color 200ms ease, color 200ms ease, background-color 200ms ease;
+    }
+
+    main{ margin-top: var(--header-height); }
+
+    /* ---------- HERO (full-bleed) ---------- */
+    .hero {
+      position:relative;
+      overflow:hidden;
+      padding:0;
+      background:linear-gradient(180deg,var(--purple-1),#60325a 60%, #5b1f4a 100%);
+      color:#fff;
+      width:100%;
+      margin:0;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 659px;
+      display: flex;
+      align-items: flex-start;
+      overflow: hidden;
+      margin: 0;
+    }
+    /* 1) Background image link on the slider */
+    .slider::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:url("https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2000&auto=format&fit=crop"); /* replace with your preferred image */
+      background-size:cover;
+      background-position:center;
+      opacity:.18;
+      mix-blend-mode:overlay;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .track {
+      display:flex;
+      transition:transform 520ms cubic-bezier(.2,.9,.2,1);
+      will-change:transform;
+      height:100%;
+      align-items:stretch;
+      position:relative;
+      z-index:1;
+    }
+    .slide{
+      flex: 0 0 100%;
+      height:100%;
+      display:block;
+      box-sizing:border-box;
+    }
+
+    .slide-inner{
+      width:90%;
+      max-width:var(--content-max);
+      margin:0 auto;
+      height:100%;
+      display:grid;
+      grid-template-columns: 1fr 0.6fr;
+      gap:24px;
+      align-items:center;
+      padding:0 40px;
+      box-sizing:border-box;
+    }
+    .page-inner{
+       width: 90%;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    padding-top: 3%;
+    padding-bottom: 0;
+    }
+
+    /* 3) Banner text: bolder + stylish */
+    .slide-content {
+      max-width: 720px;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      z-index: 6;
+      width: 71%;
+      padding: 18px 24px;
+      background: transparent;
+      border-radius: 0;
+      max-height: calc(100% - 12px);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slide-content > * { position: relative; z-index:8; }
+
+    .slide h1{
+      margin:0 0 18px 0;
+      font-size: clamp(46px, 5.5vw, 72px);
+      line-height:0.98;
+      font-weight:900;
+      letter-spacing:-1.4px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg,#fff 0%, #ffe39a 55%, #f4b621 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+    .slide p{
+      margin:0 0 22px 0;
+      color:rgba(255,255,255,0.98);
+      font-weight:700;
+      letter-spacing:0.2px;
+      text-shadow: 0 6px 18px rgba(0,0,0,0.22);
+    }
+
+    .slide .cta{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      justify-content:center;
+      background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+      color: #ffffff;
+      padding:12px 22px;
+      font-size:15px;
+      border-radius:14px;
+      font-weight:900;
+      text-decoration:none;
+      box-shadow: 0 10px 20px rgba(84,38,64,0.12), 0 2px 0 rgba(0,0,0,0.06) inset;
+      transition: transform var(--transition), box-shadow var(--transition), filter 200ms;
+      position:relative;
+      margin-bottom:18px;
+      border: 1px solid rgba(255,255,255,0.12);
+      text-transform: uppercase;
+    }
+    .slide .cta::before{
+      content: "";
+      position: absolute;
+      left: 0; right: 0; top: 0;
+      height: 44%;
+      background: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0.04));
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      pointer-events: none;
+      mix-blend-mode: soft-light;
+    }
+    .slide .cta:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(84,38,64,0.16);
+      filter: brightness(1.02);
+    }
+
+    .slide-visual{
+      position:relative;
+      align-self:flex-start;
+      display:flex;
+      justify-content:flex-end;
+      align-items:flex-start;
+      height:100%;
+    }
+    .visual-frame{
+      width:100%;
+      height:100%;
+      position:relative;
+      background:linear-gradient(135deg,#ffffff10, #ffffff06);
+      clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+      border-radius:6px;
+      overflow:hidden;
+      margin-left:auto;
+      box-shadow: inset 0 -40px 40px rgba(0,0,0,0.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    /* 2) Videos fill the visual area */
+    .visual-frame video{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      pointer-events:none; /* treat as background */
+    }
+    .visual-name{
+      position:absolute;
+      right:18%;
+      bottom:18%;
+      background:rgba(255,255,255,0.12);
+      color:#fff;
+      padding:8px 14px;
+      font-weight:700;
+      border-radius:4px;
+      letter-spacing:0.6px;
+      transform:translateY(8px);
+      z-index:2;
+    }
+
+    /* slider controls */
+    .arrow{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:46px;height:46px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,0.08);
+      color:#fff;
+      border:0;
+      cursor:pointer;
+      z-index:50;
+      margin:0 8px;
+      transition:transform var(--transition), background var(--transition);
+    }
+    .arrow:hover{transform:translateY(-50%) scale(1.06); background:rgba(255,255,255,0.14)}
+    .arrow.left{left:18px}
+    .arrow.right{right:18px}
+
+    .dots{ display: none !important; }
+
+    .page-inner > .cards{
+      margin:32px 0;
+      display:grid;
+      gap:28px;
+      grid-template-columns:repeat(3,1fr);
+      align-items:stretch;
+    }
+
+    .card{
+      border-radius:18px;
+      padding:28px;
+      position:relative;
+      min-height:260px;
+      box-shadow: none;
+      overflow:visible;
+      transition: transform var(--transition);
+      background-clip: padding-box;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      z-index:1;
+      background:#fff;
+    }
+    .card::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -12px;
+      width: 90%;
+      height: 12px;
+      background: rgba(69,18,62,0.22);
+      border-radius: 12px;
+      z-index: 0;
+      filter: blur(2px);
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 220ms ease;
+    }
+    .card::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(0);
+      bottom: -18px;
+      width: 96%;
+      height: 22px;
+      background: rgba(69,18,62,0.18);
+      border-radius: 16px;
+      filter: blur(8px);
+      opacity: 0;
+      z-index: 0;
+      pointer-events: none;
+      transition: opacity 220ms cubic-bezier(.2,.9,.2,1), transform 220ms cubic-bezier(.2,.9,.2,1);
+    }
+    .card:hover{ transform: translateY(-8px); }
+    .card:hover::before{ opacity: 1; transform: translateX(-50%) translateY(6px); }
+
+    .card--pink{ background:linear-gradient(180deg,#9f3b64,#8d2f54); color:#fff }
+    .card--red{ background:linear-gradient(180deg,#c85a5d,#b2464a); color:#fff }
+    .card--gold{ background:linear-gradient(180deg,#f7c260,#f2b23e); color:#111 }
+
+    .card h3{ margin:0; font-size:36px; font-weight:800; line-height:1; color:var(--purple-1); }
+    .card p{ margin-top:14px; font-weight:500; color:rgba(34,34,34,0.92); font-size:14px; max-width:78%; }
+
+    .card .icon{
+      position:absolute;
+      right:22px;
+      top:18px;
+      background:rgba(255,255,255,0.98);
+      width:56px;height:56px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 8px rgba(0,0,0,0.08);
+      transition: transform var(--transition), box-shadow var(--transition);
+      z-index:2;
+    }
+    .card:hover .icon{ transform:translateY(-6px) scale(1.03); box-shadow:0 14px 30px rgba(0,0,0,0.12) }
+
+    .btn, .cta-small, .slide .cta{
+      position:relative;
+      display:inline-block;
+      margin-top:18px;
+      margin-bottom:18px;
+      padding:10px 18px;
+      border-radius:14px;
+      font-weight:700;
+      background:transparent;
+      border:2px solid rgba(255,255,255,0.9);
+      color:inherit;
+      text-decoration:none;
+      transition: transform var(--transition), color 240ms ease;
+      z-index:1;
+      overflow:visible;
+    }
+    .btn::after, .cta-small::after, .slide .cta::after{
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 18px;
+      border: 2px solid rgba(255,255,255,0);
+      box-shadow: 0 0 0 rgba(255,255,255,0);
+      transition: transform 320ms cubic-bezier(.2,.9,.2,1), border-color 320ms, box-shadow 320ms;
+      transform: scale(0.85);
+      pointer-events:none;
+    }
+    .btn:hover::after, .cta-small:hover::after, .slide .cta:hover::after{
+      border-color: rgba(255,255,255,0.98);
+      transform: scale(1);
+      box-shadow: 0 6px 24px rgba(255,255,255,0.12);
+    }
+    .btn:hover, .cta-small:hover, .slide .cta:hover{ transform:translateY(-4px); }
+
+    .card--gold .btn{
+      border:2px solid rgba(0,0,0,0.12);
+      color:#111;
+      background:#fff9;
+    }
+    .card--gold .btn::after{ border-color: rgba(255,255,255,0); }
+    .card--gold .btn:hover::after{ border-color: rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(255,255,255,0.12); }
+
+    .page-inner > .info-row{
+      margin:24px 0 8px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:26px;
+      align-items:stretch;
+    }
+    .info-card{
+      border-radius:18px;
+      padding:22px;
+      background:#fff;
+      min-height:220px;
+      box-shadow: 0 10px 0 rgba(69,18,62,0.22);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .info-card--orange{ background: linear-gradient(180deg,#f36a28,#f15924); color:#111 }
+    .info-card--yellow{ background: var(--accent); color:var(--purple-2); padding:16px; margin-top:36px; border-radius:14px; }
+    .info-card--purple{ background: linear-gradient(180deg,#6e3574,#643062); color:#fff }
+
+    .page-inner > .why-section{
+      margin:30px 0 80px;
+      display:grid;
+      grid-template-columns: 1fr 380px;
+      gap:30px;
+      align-items:start;
+    }
+    .why-section h2{ color: var(--purple-2);
+    margin: 0 0 12px;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 0.88;
+    font-size: clamp(40px, 6.6vw, 106px);}
+    .why-section p{ color: #666; line-height:1.6; margin:0 0 8px; font-size:15px }
+    .why-list{
+      display:grid;
+      grid-template-columns: 1 fr 1fr;
+      gap:12px 20px;
+      align-items:start;
+    }
+    .why-item{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      color:#444;
+      font-weight:600;
+    }
+    .why-item .tick{
+      color: var(--purple-2);
+      font-weight:900;
+      font-size:20px;
+      margin-top:2px;
+    }
+
+    .access{
+      position:fixed;
+      right:18px;
+      bottom:110px;
+      width:44px;height:44px;border-radius:10px;
+      background:var(--accent);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      z-index:30;
+      cursor:pointer;
+      transition:transform var(--transition);
+    }
+    .access:hover{transform:translateY(-4px)}
+
+    footer{
+      background: linear-gradient(180deg,var(--purple-1),var(--purple-2));
+      color:#fff;
+      padding:48px 0;
+      margin-top:0;
+    }
+    .footer-inner{
+      max-width:var(--content-max);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr 320px;
+      gap:28px;
+      align-items:start;
+      padding:0 40px;
+      box-sizing:border-box;
+    }
+    .footer-brand{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .footer-brand .logo{ font-size:20px; color:#fff }
+    .footer-quick{
+      display:flex;
+      gap:18px;
+    }
+    .footer-quick nav{ display:flex; flex-direction:column; gap:8px }
+    .footer-quick a{ color:#fff; text-decoration:none; opacity:0.95; font-weight:600 }
+    .footer-contact{ background: rgba(255,255,255,0.06); border-radius:12px; padding:16px; }
+    .footer-contact a{ color:#fff; display:block; text-decoration:none; margin:8px 0; font-weight:700 }
+    .footer-bottom{ margin-top:18px; border-top:1px solid rgba(255,255,255,0.06); padding-top:12px; color:rgba(255,255,255,0.85); font-size:13px; }
+
+    /* ---------- DOODLES OVERLAY (inline, behind hero slider) ---------- */
+    .hero .hero-doodles {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.26;             /* adjust strength */
+      mix-blend-mode: screen;    /* golden-white lifts purple nicely */
+      z-index: 0;
+    }
+    .hero .slider { z-index: 1; } /* keep content above doodles */
+
+    /* responsive adjustments */
+    @media(max-width:1100px){
+      .slide h1{font-size:40px}
+      .page-inner > .cards{ grid-template-columns:repeat(2,1fr) }
+      .slider{height:380px}
+      .page-inner > .why-section{ grid-template-columns: 1fr 320px }
+      .page-inner > .info-row{ grid-template-columns: repeat(2, 1fr) }
+      .slide-inner{padding:0 22px}
+      .footer-inner{grid-template-columns:1fr 1fr 260px}
+
+      .talent-hero{ grid-template-columns: 1fr 360px }
+      .talent-photo{ width:200px; height:200px }
+      .talent-ring{ width:250px; height:250px }
+      .stats-row{ grid-template-columns: repeat(4,1fr) }
+    }
+    @media(max-width:820px){
+      .page-inner > .info-row{ grid-template-columns:1fr }
+      .info-card--yellow{ margin-top:0 }
+      .page-inner > .why-section{ grid-template-columns:1fr; gap:18px }
+      .footer-inner{ grid-template-columns:1fr; padding:0 20px }
+
+      .talent-hero{ grid-template-columns:1fr; gap:18px }
+      .talent-copy h2{ text-align:left; font-size:26px }
+      .talent-media{ height:300px }
+      .talent-features{ grid-template-columns:1fr; gap:12px }
+      .promo-inner{ grid-template-columns:1fr; }
+      .stats-row{ grid-template-columns: 2fr 2fr }
+
+      .hero .hero-doodles { opacity: 0.18; }
+
+      /* Mobile: make it full-bleed and centered */
+      .page-inner > .talent-section{
+        width:100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+      }
+      .talent-inner{ width:100%; max-width:none; }
+    }
+
+    /* MOBILE: make cards section full-bleed / 100% viewport wide */
+    @media(max-width:720px){
+      .topbar{padding:10px 16px}
+      nav{display:none}
+      .menu-toggle{display:inline-flex}
+      .right-ctas{gap:8px}
+
+      .slider{
+        height: auto;
+        max-width:100%;
+        margin:0;
+        padding-bottom:12px;
+      }
+
+      .slide-inner{
+        grid-template-columns: 1fr 38%;
+        padding:8px 12px;
+        min-height:44vh;
+        align-items:center;
+        gap:12px;
+        max-width:100%;
+        box-sizing:border-box;
+        width:100%;
+      }
+      .slide-content{
+        width:100%;
+        padding-top:12px;
+        padding:18px 12px;
+        background: transparent;
+        border-radius:6px;
+        backdrop-filter: none;
+        max-height: none;
+        overflow: visible;
+      }
+
+      .visual-frame{
+        width:100%;
+        height:auto;
+        max-height:46vh;
+        clip-path: none;
+        border-radius:8px;
+        box-shadow: none;
+        overflow:visible;
+        align-self:center;
+        margin-left:0;
+      }
+      .visual-frame video{
+        width:100%;
+        height:100%;
+      }
+
+      .slide h1{font-size:28px}
+      .page-inner > .cards{grid-template-columns:1fr;padding:0;margin:0}
+      .card{min-height:200px;padding:22px}
+      .card h3{font-size:28px}
+
+      .page-inner {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      .page-inner > .cards {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px 0;
+      }
+      .page-inner > .cards .card {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 18px;
+      }
+
+      .visual-name{right:8%;bottom:18%}
+      .arrow{display:none}
+      .access{bottom:90px}
+      .logo{font-size:18px}
+      .btn-pay{padding:8px 12px}
+      .why-list{grid-template-columns:1fr; gap:10px}
+      .footer-inner{grid-template-columns:1fr; padding:0 16px }
+
+      .talent-photo{ width:180px; height:180px }
+      .talent-ring{ width:220px; height:220px }
+      .promo-banner{ border-radius:12px }
+      .stats-row{ grid-template-columns: 1fr 1fr }
+
+      .hero .hero-doodles { opacity: 0.14; }
+    }
+
+    /* MOBILE NAV */
+    .mobile-nav{ display:none; }
+    .mobile-nav.open{
+      display:flex;
+      position:fixed;
+      inset:0;
+      z-index:220;
+      background: linear-gradient(180deg, var(--purple-1) 0%, #4a1438 100%);
+      color:#fff;
+      flex-direction:column;
+      align-items:flex-start;
+      justify-content:flex-start;
+      padding-top: calc(var(--header-height) + 12px);
+      gap:18px;
+      padding-left:28px;
+      box-sizing:border-box;
+      transition:opacity 220ms ease;
+    }
+    .mobile-nav .close-btn{ position:absolute; top:12px; right:12px; background:transparent; border:0; color:#fff; font-size:28px; padding:8px; cursor:pointer; }
+    .mobile-nav a{ color:#fff; font-size:20px; font-weight:800; text-decoration:none; margin-bottom:6px; }
+    .mobile-nav .sub{ color:rgba(255,255,255,0.9); font-weight:600; font-size:14px; margin-top:12px; }
+    .mobile-nav .cta-link{ margin-top:16px; background:var(--accent); color:var(--purple-1); padding:10px 20px; border-radius:24px; font-weight:800; text-decoration:none; display:inline-block; }
+
+    body.menu-open { overflow:hidden; }
+    a:focus{ outline: 3px solid rgba(123,47,102,0.12); outline-offset:3px; border-radius:6px; }
+
+    /* ---------------------
+       SOURCING BANNER (LARGE / FULL-WIDTH)
+       --------------------- */
+
+    .amazon-banner {
+      width:100%;
+      display:block;
+      background: linear-gradient(180deg,#0aa7b7,#0a97ab);
+      color:#fff;
+      padding:0;
+      box-sizing:border-box;
+      margin:0;
+      border-top: 6px solid rgba(255,255,255,0.03);
+    }
+    .amazon-inner {
+width: 92%;
+    max-width: 100%;
+    margin: 0 10px 10px 0px;
+    position: relative;
+    height: 596px;
+    display: grid
+;
+    grid-template-columns: 46% 57%;
+    align-items: center;
+    gap: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+
+    /* left-bleed image */
+    .amazon-visual{
+      position:relative;
+      flex:0 0 42%;
+      height:100%;
+      overflow:visible;
+      z-index:1;
+    }
+    .amazon-visual img{
+      position:absolute;
+      left:-8%;
+      top:50%;
+      transform:translateY(-50%);
+      height:110%;
+      width:auto;
+      display:block;
+      object-fit:cover;
+      object-position:left center;
+      border-radius:0;
+      box-shadow:none;
+      border:0;
+      pointer-events:none;
+      -webkit-user-drag:none;
+      z-index:1;
+    }
+
+    .amazon-content{
+      flex:1 1 58%;
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+      padding:12px 8px;
+      box-sizing:border-box;
+      text-align:center;
+      z-index:2;
+    }
+    .amazon-title{
+      margin:0;
+      font-weight:900;
+      letter-spacing: -1px;
+      text-transform:uppercase;
+      line-height:0.88;
+      font-size: clamp(44px, 7.6vw, 120px);
+      color:#fff;
+      max-width:980px;
+    }
+    .amazon-sub{
+      margin:0;
+      color:rgba(255,255,255,0.95);
+      font-weight:600;
+      font-size:16px;
+      max-width:56ch;
+    }
+    .amazon-cta{
+      display:inline-block;
+      margin-top:6px;
+      padding:14px 22px;
+      border-radius:12px;
+ background: #e0a945;
+    color: #473333;
+      font-weight:800;
+      font-size:16px;
+      text-decoration:none;
+      box-shadow: 0 12px 30px rgba(255,153,0,0.18);
+    }
+
+    @media (max-width:1100px) {
+      .amazon-inner { gap:20px; height:460px; grid-template-columns: 44% 56%; }
+      .amazon-visual img{ left:-6%; height:116%; }
+      .amazon-title { font-size: clamp(40px, 9vw, 98px); }
+    }
+    @media (max-width:820px) {
+      .amazon-inner {
+        grid-template-columns: 1fr;
+        align-items:start;
+        height:auto;
+        padding:0;
+      }
+      .amazon-visual{
+        height:260px;
+      }
+      .amazon-visual img{
+        position:absolute;
+        left:0;
+        top:0;
+        transform:none;
+        width:48%;
+        height:100%;
+        object-position:left center;
+      }
+      .amazon-content{
+        padding:18px 20px;
+        margin-left:48%;
+        text-align:center;
+        align-items:center;
+        justify-content:center;
+      }
+      .amazon-title{ font-size: clamp(26px, 8.5vw, 48px); line-height:1.04; }
+      .amazon-sub{ font-size:14px; max-width:560px; }
+      .amazon-cta{ font-size:16px; padding:12px 28px; }
+    }
+    @media (max-width:480px) {
+      .amazon-content{ margin-left:0; padding:16px 14px; }
+      .amazon-visual img{ display:none; } /* hide image on very small screens to preserve readability */
+      .amazon-title{ font-size: clamp(22px, 8.5vw, 38px); line-height:1.06; }
+      .amazon-sub{ font-size:13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar" id="topbar" role="banner">
+    <div class="top-left">
+      <div class="logo"><span class="box" aria-hidden="true"></span>VSL MARKET</div>
+      <nav aria-label="Primary navigation" id="mainNav">
+        <a href="#" data-key="sourcing">Sourcing</a>
+        <a href="#" data-key="catalog">Catalog</a>
+        <a href="#" data-key="suppliers">Suppliers</a>
+      </nav>
+    </div>
+
+    <div class="right-ctas">
+      <div class="call">Sales +1 (555) 123-4567</div>
+      <button class="btn-pay">Request Quote</button>
+      <button class="menu-toggle" id="menuToggle" aria-controls="mobileNav" aria-expanded="false" aria-label="Open mobile menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Full-screen mobile nav overlay (starts hidden) -->
+  <nav id="mobileNav" class="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <button class="close-btn" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#" data-key="sourcing">Sourcing</a>
+    <a href="#" data-key="catalog">Catalog</a>
+    <a href="#" data-key="suppliers">Suppliers</a>
+    <a href="#" data-key="how">How It Works</a>
+    <a href="#" data-key="about">About</a>
+    <div class="sub">Sales +1 (555) 123-4567 • b2b@vslmarket.com</div>
+    <a class="cta-link" href="#" role="button">Start Sourcing</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="Hero slider">
+      <!-- New hair-like doodles layer (behind slider) -->
+      <svg class="hero-doodles" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Subtle gold-to-white sheen for strands -->
+          <linearGradient id="hairGold" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#F4B621" stop-opacity="0.9"/>
+          </linearGradient>
+          <linearGradient id="hairGoldV" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+            <stop offset="100%" stop-color="#F4B621" stop-opacity="0.85"/>
+          </linearGradient>
+          <!-- Slight blur for depth layers -->
+          <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+            <feGaussianBlur stdDeviation="1.2"/>
+          </filter>
+          <filter id="softer" x="-10%" y="-10%" width="120%" height="120%">
+            <feGaussianBlur stdDeviation="2.2"/>
+          </filter>
+          <!-- Mask to keep center slightly clearer for legibility -->
+          <radialGradient id="centerFade" cx="50%" cy="50%" r="55%">
+            <stop offset="0%" stop-color="#000" stop-opacity="0.28"/>
+            <stop offset="55%" stop-color="#000" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="centerMask">
+            <rect width="1440" height="600" fill="url(#centerFade)"/>
+          </mask>
+        </defs>
+
+        <!-- BACK LAYER: very soft, thicker strands for body -->
+        <g opacity="0.28" filter="url(#softer)">
+          <path d="M-80,80 C220,10 340,220 620,160 S1020,60 1520,180" stroke="url(#hairGoldV)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+          <path d="M-120,300 C180,180 360,410 640,340 S1060,260 1500,360" stroke="url(#hairGoldV)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          <path d="M-140,520 C140,420 420,620 740,520 S1180,420 1540,500" stroke="url(#hairGoldV)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- MID LAYER: flowing S-curves like hair strands -->
+        <g opacity="0.42" mask="url(#centerMask)">
+          <path d="M-60,40 C200,120 120,240 380,300 C640,360 560,480 820,520 C1080,560 1040,640 1320,620" stroke="url(#hairGold)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <path d="M-40,120 C180,40 200,220 480,180 C760,140 760,320 1040,300 C1320,280 1340,360 1500,340" stroke="url(#hairGold)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M-30,200 C160,280 220,180 440,260 C660,340 720,220 960,300 C1200,380 1260,280 1540,360" stroke="url(#hairGold)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M-50,460 C180,380 260,520 520,480 C780,440 860,560 1140,520 C1420,480 1460,560 1540,540" stroke="url(#hairGold)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M-20,560 C220,520 260,580 520,560 C780,540 840,600 1120,580 C1400,560 1460,600 1540,600" stroke="url(#hairGold)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- FRONT LAYER: finer flyaway hairs for detail -->
+        <g opacity="0.55" filter="url(#soft)">
+          <path d="M20,-10 C140,70 80,130 200,200 C320,270 260,330 380,400" stroke="url(#hairGold)" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+          <path d="M1080,-20 C1160,60 1100,140 1180,220 C1260,300 1200,360 1280,440" stroke="url(#hairGold)" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+          <path d="M260,30 C380,110 320,170 440,240 C560,310 500,370 620,440" stroke="url(#hairGold)" stroke-width="1.0" fill="none" stroke-linecap="round"/>
+          <path d="M820,60 C940,140 880,200 1000,270 C1120,340 1060,400 1180,470" stroke="url(#hairGold)" stroke-width="1.0" fill="none" stroke-linecap="round"/>
+          <path d="M-10,300 C110,380 50,440 170,510" stroke="url(#hairGold)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          <path d="M1360,120 C1440,200 1380,260 1460,340" stroke="url(#hairGold)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- SIDE SHEETS: subtle vertical flow mimicking brushed hair at edges -->
+        <g opacity="0.24">
+          <path d="M-10,-20 C60,160 60,320 0,640" stroke="url(#hairGoldV)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M1450,-20 C1380,160 1380,320 1440,640" stroke="url(#hairGoldV)" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <!-- /New hair doodles -->
+
+      <div class="slider" id="slider" aria-live="polite">
+        <button class="arrow left" id="prevBtn" aria-label="Previous slide">‹</button>
+
+        <div class="track" id="track" role="list" tabindex="0">
+          <article class="slide" role="listitem" aria-roledescription="slide" data-index="0">
+            <div class="slide-inner">
+              <div class="slide-content">
+                <h1>Source premium human hair at scale</h1>
+                <p>End-to-end B2B procurement for bundles, frontals and closures. Verified factories, consistent quality, global delivery.</p>
+                <a class="cta" href="#" role="button" style=" background: #f4b621; border: 0; height: 53px; line-height: 33px; color: #603159; font-size: 20px; ">Start a Sourcing Request →</a>
+              </div>
+              <div class="slide-visual" aria-hidden="true">
+                <div class="visual-frame">
+                  <!-- 2) Random autoplaying video (assigned by JS) -->
+                  <video class="hero-video" muted playsinline loop preload="none" poster="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop"></video>
+                  <div class="visual-name">BUNDLES</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" role="listitem" aria-roledescription="slide" data-index="1">
+            <div class="slide-inner">
+              <div class="slide-content">
+                <h1>Wigs, extensions and salon accessories</h1>
+                <p>From 100% human hair wigs to clips, combs and heat tools — consolidated procurement with MOQs that fit your business.</p>
+                <a class="cta" href="#" role="button" style=" background: #f4b621; border: 0; height: 53px; line-height: 33px; color: #603159; font-size: 20px; ">Browse B2B Catalog →</a>
+              </div>
+              <div class="slide-visual" aria-hidden="true">
+                <div class="visual-frame">
+                  <video class="hero-video" muted playsinline loop preload="none" poster="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop"></video>
+                  <div class="visual-name">WIGS & EXTENSIONS</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide" role="listitem" aria-roledescription="slide" data-index="2">
+            <div class="slide-inner">
+              <div class="slide-content">
+                <h1>Quality assurance, packaging and logistics</h1>
+                <p>Factory audits, AQL inspections, private label packaging and door-to-door shipping — managed by VSL Market.</p>
+                <a class="cta" href="#" role="button" style=" background: #f4b621; border: 0; height: 53px; line-height: 33px; color: #603159; font-size: 20px; ">Book a Call →</a> 
+              </div>
+              <div class="slide-visual" aria-hidden="true">
+                <div class="visual-frame">
+                  <video class="hero-video" muted playsinline loop preload="none" poster="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"></video>
+                  <div class="visual-name">LOGISTICS</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="arrow right" id="nextBtn" aria-label="Next slide">›</button>
+        <div class="dots" id="dots" role="tablist" aria-label="Slide indicators"></div>
+      </div>
+    </section>
+
+    <div class="page-inner">
+      <section class="cards" aria-label="Core categories">
+        <article class="card card--pink" aria-labelledby="c1" style="color: #f7bd30;">
+          <div>
+            <h3 id="c1" style="color: #ffd775;">Human Hair Bundles</h3>
+            <p style="color: #efddcf;">Virgin and Remy bundles with consistent grading, textures and lengths. Transparent specs and batch testing.</p>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:flex-start">
+            <a class="btn" href="#">Request Pricing</a>
+          </div>
+          <div class="icon" aria-hidden="true" style="right:22px;top:18px;">
+            <!-- Comb icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="6" width="8" height="12" rx="2" fill="#B23A63"/>
+              <path d="M12 7h10M12 10h10M12 13h10M12 16h10" stroke="#7A2C4B" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="card card--red" aria-labelledby="c2">
+          <div>
+            <h3 id="c2" style="color: white;">Wigs & <br>Frontals</h3>
+            <p>360 lace, HD lace, closures and full wigs. Custom density, bleached knots, pre-plucked hairlines on request.</p>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:flex-start">
+            <a class="btn" href="#">See Options</a>
+          </div>
+          <div class="icon" aria-hidden="true" style="right:22px;top:18px;">
+            <!-- Wig/head icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 3c4.2 0 7.5 3.2 7.5 7.2 0 3.9-2.7 6.8-7.5 8.8-4.8-2-7.5-4.9-7.5-8.8C4.5 6.2 7.8 3 12 3Z" fill="var(--purple-1)"/>
+              <circle cx="12" cy="10.2" r="3.2" fill="#fff" fill-opacity=".2"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="card card--gold" aria-labelledby="c3">
+          <div>
+            <h3 id="c3">Accessories <br>& Tools</h3>
+            <p>Clips, combs, stands, caps and heat tools — consolidated cartons and consistent supplier SLAs.</p>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:flex-start">
+            <a class="btn" href="#">Build PO</a>
+          </div>
+          <div class="icon" aria-hidden="true" style="right:22px;top:18px;">
+            <!-- Scissors + comb icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 6h8M4 9h8M4 12h8M4 15h8" stroke="#63264A" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M18.5 8.5l-4 4m0-4 4 4" stroke="#63264A" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="15" cy="16.5" r="1.2" fill="#63264A"/>
+              <circle cx="20" cy="16.5" r="1.2" fill="#63264A"/>
+            </svg>
+          </div>
+        </article>
+      </section>
+	  
+	  </div>
+	    <section class="amazon-banner" aria-labelledby="amazon-heading">
+    <div class="amazon-inner" role="region" aria-label="Sourcing banner">
+      <div class="amazon-visual" aria-hidden="true">
+        <!-- Left-bleed portrait relevant to hair category -->
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/64d7a9f573b1522997fcf4bc/3a4d8af5-fbf2-4c3c-937b-003076f0350e/Women+Uprising+Web+Graphics_+%281920+x+1920+px%29-6.png"
+          alt="Model with voluminous hair, left-bleed visual"
+          onerror="this.setAttribute('alt','portrait');this.style.display='none';" />
+      </div>
+
+      <div class="amazon-content">
+        <h2 id="amazon-heading" class="amazon-title">SCALE YOUR HAIR PRODUCT SOURCING</h2>
+        <p class="amazon-sub">Verified suppliers, AQL inspections, private label packaging and global freight — managed by VSL Market so you can grow with confidence.</p>
+        <a class="amazon-cta" href="#" role="button">Book a consultation</a>
+      </div>
+    </div>
+  </section>
+	  <div class="page-inner">
+
+      <section class="why-section" aria-label="Why VSL Market">
+        <div>
+          <h2>Why VSL Market?</h2>
+          <p>We help salons, e‑commerce brands and distributors procure hair products with less risk and more transparency. From supplier selection to delivered goods, we manage the details so you can scale.</p>
+        </div>
+
+        <div>
+          <div class="why-list" role="list">
+            <div class="why-item" role="listitem"><div class="tick">✓</div><div>Verified & audited suppliers</div></div>
+            <div class="why-item" role="listitem"><div class="tick">✓</div><div>Consistent grading & specs</div></div>
+            <div class="why-item" role="listitem"><div class="tick">✓</div><div>AQL inspections & reporting</div></div>
+         
+          </div>
+        </div>
+      </section>
+    </div> <!-- /.page-inner -->
+  </main>
+    
+  <main class="x84219" aria-label="Arachas feature cards">
+    <!-- Card 1: Young Driver -->
+    <article class="x19374 x49021" role="region" aria-labelledby="c1-title">
+      <span class="x31856" aria-hidden="true"></span>
+      <div class="x94562" aria-hidden="true">
+        <!-- Steering/driver icon (approx) -->
+        <svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+          <circle cx="32" cy="16" r="8" fill="#6b2c73"/>
+          <circle cx="32" cy="40" r="14" fill="none" stroke="#6b2c73" stroke-width="6"/>
+          <rect x="15" y="32" width="34" height="8" rx="4" fill="#6b2c73"/>
+        </svg>
+      </div>
+
+      <h2 id="c1-title" class="x20641 x70012">Young<br>Driver</h2>
+      <p class="x51290 x70022">
+        Dedicated team that will discuss the best car insurance options for you.
+        Discount on driving lessons available.
+      </p>
+      <a class="x88001 x88002" href="#" role="button">Get A Quote</a>
+    </article>
+
+    <!-- Card 2: About Arachas (stacked) -->
+    <article class="x19374 x77205" role="region" aria-labelledby="c2-title">
+      <span class="x31856" aria-hidden="true"></span>
+
+      <header class="x33007" aria-label="Arachas wordmark">
+        <div class="x11447" aria-hidden="true">ARACHAS</div>
+        <span class="x55773" aria-hidden="true">
+          <svg viewBox="0 0 20 20" width="18" height="18">
+            <rect x="0" y="0" width="20" height="20" rx="4" fill="#f6b71b"/>
+            <path d="M7 5l6 5-6 5V5z" fill="#5d2969"/>
+          </svg>
+        </span>
+      </header>
+
+      <section class="x66432">
+        <h3 id="c2-title">About Arachas</h3>
+        <p>
+          Arachas is Ireland’s largest, fastest‑growing, nationwide insurance brokerage.
+        </p>
+        <a class="x22119" href="#">Read more About Us &gt;</a>
+      </section>
+    </article>
+
+    <!-- Card 3: Renew Online -->
+    <article class="x19374 x65930" role="region" aria-labelledby="c3-title">
+      <span class="x31856" aria-hidden="true"></span>
+      <div class="x94562" aria-hidden="true">
+        <!-- Wallet/card icon (approx) -->
+        <svg viewBox="0 0 64 64" width="36" height="36" aria-hidden="true">
+          <rect x="8" y="18" width="48" height="28" rx="6" fill="#6b2c73"/>
+          <rect x="14" y="28" width="36" height="4" fill="#ffffff"/>
+          <rect x="14" y="35" width="12" height="4" fill="#ffffff"/>
+        </svg>
+      </div>
+
+      <h2 id="c3-title" class="x20641 x70011">Renew<br>Online</h2>
+      <p class="x51290 x70021">
+        Existing customers can pay their renewal online at a time that suits them.
+      </p>
+      <a class="x88001 x88003" href="#" role="button">Make a payment</a>
+    </article>
+  </main>
+
+  <div class="access" title="Accessibility options" aria-hidden="true">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2v6" stroke="#4a2b07" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M6 10c1.5 4 3 6 6 6s4.5-2 6-6" stroke="#4a2b07" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="12" cy="18.5" r="1" fill="#4a2b07"/>
+    </svg>
+  </div>
+
+  <!-- Extended footer -->
+  <footer aria-label="Extended footer" style="background:#4a174b;color:#e6f3f6;padding:48px 0;border-top:1px solid rgba(255,255,255,0.04);">
+    <div style="width:90%;max-width:1200px;margin:0 auto;display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap;box-sizing:border-box;">
+      <div style="flex:1;min-width:180px;">
+        <h4 id="f-products" style="margin:0 0 12px 0;color:#e6f3f6;font-size:15px;">Product Lines</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Human Hair Bundles</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Wigs & Frontals</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Closures</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Accessories & Tools</a></li>
+        </ul>
+      </div>
+
+      <div style="flex:1;min-width:180px;">
+        <h4 id="f-resources" style="margin:0 0 12px 0;color:#e6f3f6;font-size:15px;">Resources</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Quality Standards (AQL)</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Packaging Templates</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Incoterms Guide</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Case Studies</a></li>
+        </ul>
+      </div>
+
+      <div style="flex:1;min-width:180px;">
+        <h4 id="f-company" style="margin:0 0 12px 0;color:#e6f3f6;font-size:15px;">Company</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">About</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Careers</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Press</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Supplier Sign‑Up</a></li>
+        </ul>
+      </div>
+
+      <div style="flex:1;min-width:180px;">
+        <h4 id="f-support" style="margin:0 0 12px 0;color:#e6f3f6;font-size:15px;">Support</h4>
+        <ul style="list-style:none;padding:0;margin:0;">
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Contact us</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Status</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Privacy & Terms</a></li>
+          <li style="margin:8px 0;color:#9fb6bd;font-size:14px;"><a href="#" style="color:#9be6d6;text-decoration:none;">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <div style="width:300px;min-width:220px;">
+        <h4 id="f-getapp" style="margin:0 0 12px 0;color:#e6f3f6;font-size:15px;">Get the catalog</h4>
+
+        <div style="display:flex;gap:12px;align-items:center;margin-top:6px;">
+          <input id="ml-news-email" type="email" placeholder="Work email" aria-label="Email address"
+                 style="flex:1;padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:#e6f3f6;">
+          <button id="ml-news-submit" type="button"
+                  style="background:#f4b621;color:#012024;border:0;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer;">Send</button>
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:12px;align-items:center;">
+          <a class="ml-badge" href="#" aria-label="View catalog PDF" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px;color:#e6f3f6;text-decoration:none;font-weight:700;font-size:13px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#fff" opacity="0.08"/></svg>
+            Download PDF
+          </a>
+          <a class="ml-badge" href="#" aria-label="Schedule demo" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px;color:#e6f3f6;text-decoration:none;font-weight:700;font-size:13px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#fff" opacity="0.08"/></svg>
+            Book a Demo
+          </a>
+        </div>
+
+        <div style="display:flex;gap:10px;margin-top:18px;">
+          <a href="#" title="Twitter" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.04);display:inline-flex;align-items:center;justify-content:center;color:#e6f3f6;text-decoration:none">T</a>
+          <a href="#" title="Facebook" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.04);display:inline-flex;align-items:center;justify-content:center;color:#e6f3f6;text-decoration:none">F</a>
+          <a href="#" title="LinkedIn" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.04);display:inline-flex;align-items:center;justify-content:center;color:#e6f3f6;text-decoration:none">in</a>
+        </div>
+
+        <div style="margin-top:20px;color:#9fb6bd;font-size:13px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;">
+          <span>© <span id="ml-year"></span> VSL Market</span>
+          <span style="opacity:0.7">•</span>
+          <a href="#" style="color:#9be6d6;text-decoration:none;">Privacy</a>
+          <span style="opacity:0.7">•</span>
+          <a href="#" style="color:#9be6d6;text-decoration:none;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+ 
+ 
+
+
+ <script>
+    // Minimal JS retained; uses isolated class names
+    (function(){
+      document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Tab'){
+          document.documentElement.classList.add('kbd');
+        }
+      }, {once:true});
+
+      document.querySelectorAll('.x88001').forEach(btn=>{
+        btn.addEventListener('mousedown', ()=> btn.style.transform = 'translateY(0)');
+        btn.addEventListener('mouseup',   ()=> btn.style.transform = '');
+        btn.addEventListener('mouseleave',()=> btn.style.transform = '');
+      });
+    })();
+  </script>
+  <script>
+    // -------------------------
+    // Header height management
+    // -------------------------
+    function updateHeaderHeight(){
+      const top = document.getElementById('topbar');
+      if(!top) return;
+      const h = top.offsetHeight || 64;
+      document.documentElement.style.setProperty('--header-height', h + 'px');
+      document.querySelector('main').style.marginTop = h + 'px';
+      window.dispatchEvent(new Event('resize'));
+    }
+    window.addEventListener('load', updateHeaderHeight);
+    window.addEventListener('resize', updateHeaderHeight);
+
+    // -------------------------
+    // Toggle header styles on scroll (desktop focus)
+    // -------------------------
+    function handleHeaderScroll(){
+      const topbar = document.getElementById('topbar');
+      if(!topbar) return;
+      const isDesktop = window.innerWidth > 720;
+      const scrolled = window.scrollY > 12;
+      topbar.classList.toggle('scrolled', isDesktop && scrolled);
+    }
+    window.addEventListener('load', handleHeaderScroll);
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    window.addEventListener('resize', handleHeaderScroll);
+
+    // -------------------------
+    // Mobile full-screen menu
+    // -------------------------
+    (function(){
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileNav = document.getElementById('mobileNav');
+      const mobileClose = document.getElementById('mobileClose');
+      const focusableSelector = 'a[href], button:not([disabled])';
+      let lastFocusedEl = null;
+
+      function openMenu(){
+        lastFocusedEl = document.activeElement;
+        mobileNav.classList.add('open');
+        mobileNav.setAttribute('aria-hidden', 'false');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('menu-open');
+        const firstLink = mobileNav.querySelector('a');
+        if(firstLink) firstLink.focus();
+        document.addEventListener('focus', trapFocus, true);
+      }
+      function closeMenu(){
+        mobileNav.classList.remove('open');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+        document.removeEventListener('focus', trapFocus, true);
+        if(lastFocusedEl) lastFocusedEl.focus();
+      }
+      function trapFocus(e){
+        if(!mobileNav.classList.contains('open')) return;
+        if(mobileNav.contains(e.target)) return;
+        const first = mobileNav.querySelector(focusableSelector);
+        if(first) first.focus();
+        e.stopPropagation();
+        e.preventDefault();
+      }
+
+      menuToggle?.addEventListener('click', function(){
+        const isOpen = mobileNav.classList.contains('open');
+        if(isOpen) closeMenu(); else openMenu();
+      });
+      mobileClose?.addEventListener('click', closeMenu);
+
+      window.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && mobileNav.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+
+      mobileNav.addEventListener('click', function(e){
+        if(e.target === mobileNav) closeMenu();
+      });
+
+      mobileNav.querySelectorAll('a[data-key]').forEach(a=>{
+        a.addEventListener('click', (ev)=>{
+          ev.preventDefault();
+          const key = a.getAttribute('data-key');
+          document.querySelectorAll('#mainNav a').forEach(m=> m.classList.toggle('active', m.getAttribute('data-key') === key));
+          closeMenu();
+        });
+      });
+    })();
+
+    // -------------------------
+    // Desktop main nav demo active-state handling
+    // -------------------------
+    (function(){
+      const nav = document.getElementById('mainNav');
+      const links = Array.from(nav.querySelectorAll('a'));
+      if(links.length) links[0].classList.add('active');
+
+      links.forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          e.preventDefault();
+          links.forEach(l=> l.classList.remove('active'));
+          a.classList.add('active');
+        });
+        a.addEventListener('keydown', (e)=>{
+          if(e.key === 'Enter' || e.key === ' '){
+            e.preventDefault();
+            links.forEach(l=> l.classList.remove('active'));
+            a.classList.add('active');
+          }
+        });
+      });
+    })();
+
+    // -------------------------
+    // Slider implementation (draggable, autoplay, keyboard)
+    // + random self-hosted background videos per slide
+    // -------------------------
+    (function(){
+      const track = document.getElementById('track');
+      const slides = Array.from(track.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('dots');
+      const slider = document.getElementById('slider');
+      let index = 0;
+      const count = slides.length;
+      let isDragging = false;
+      let startX = 0;
+      let autoplayID = null;
+
+      const autoplayDelay = 180000;
+
+      // Replace with your actual video file URLs (local or CDN).
+      // Provide at least as many as slides; duplicates are handled.
+      const hairVideos = [
+        'assets/videos/hair1.mp4',
+        'assets/videos/hair2.mp4',
+        'assets/videos/hair3.mp4',
+        'assets/videos/hair4.mp4',
+        'assets/videos/hair5.mp4'
+      ];
+
+      // Assign random videos to each slide
+      function shuffle(a){ return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]); }
+      function assignRandomVideos(){
+        const vids = shuffle(hairVideos.slice());
+        slides.forEach((s,i)=>{
+          const v = s.querySelector('.hero-video');
+          if(!v) return;
+          const pick = vids[i % vids.length];
+          if(pick){
+            v.src = pick;
+            v.setAttribute('playsinline','');
+            v.setAttribute('muted','');
+            v.muted = true;
+            v.loop = true;
+            v.autoplay = true;
+            v.addEventListener('canplay', ()=>{ v.play().catch(()=>{}); }, {once:true});
+          }
+        });
+      }
+
+      if (dotsContainer) {
+        slides.forEach((s, i) => {
+          const dot = document.createElement('button');
+          dot.className = 'dot' + (i===0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to slide ' + (i+1));
+          dot.addEventListener('click', ()=> goTo(i));
+          dotsContainer.appendChild(dot);
+        });
+      }
+
+      function setPosition(){
+        track.style.width = `${count * 100}%`;
+        slides.forEach(s => s.style.width = `${100 / count}%`);
+        track.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      function playActive(){
+        slides.forEach((s, i)=>{
+          const v = s.querySelector('.hero-video');
+          if(!v) return;
+          if(i === index){
+            v.currentTime = 0;
+            v.play().catch(()=>{});
+          } else {
+            v.pause();
+          }
+        });
+      }
+
+      function goTo(i){
+        index = (i + count) % count;
+        setPosition();
+        playActive();
+        resetAutoplay();
+      }
+
+      prevBtn.addEventListener('click', ()=> goTo(index - 1));
+      nextBtn.addEventListener('click', ()=> goTo(index + 1));
+
+      window.addEventListener('keydown', e=>{
+        if(e.key === 'ArrowLeft') prevBtn.click();
+        if(e.key === 'ArrowRight') nextBtn.click();
+      });
+
+      track.addEventListener('pointerdown', startDrag, {passive:false});
+      track.addEventListener('pointerup', endDrag);
+      track.addEventListener('pointerleave', endDrag);
+      track.addEventListener('pointercancel', endDrag);
+      track.addEventListener('pointermove', moveDrag);
+
+      function startDrag(e){
+        isDragging = true;
+        startX = e.clientX || (e.touches && e.touches[0].clientX);
+        track.style.transition = 'none';
+        try { e.target.setPointerCapture?.(e.pointerId); } catch (err) {}
+        resetAutoplay();
+      }
+      function moveDrag(e){
+        if(!isDragging) return;
+        const currentX = e.clientX ?? startX;
+        const diff = currentX - startX;
+        const pct = (diff / slider.clientWidth) * 100;
+        track.style.transform = `translateX(${ -index*100 + pct }%)`;
+      }
+      function endDrag(e){
+        if(!isDragging) return;
+        isDragging = false;
+        const endX = e.clientX ?? startX;
+        const diff = endX - startX;
+        const threshold = slider.clientWidth * 0.15;
+        track.style.transition = '';
+        if(Math.abs(diff) > threshold){
+          if(diff < 0) goTo(index + 1);
+          else goTo(index - 1);
+        } else {
+          setPosition();
+        }
+      }
+
+      function nextAuto(){ goTo(index + 1); }
+      function startAutoplay(){ stopAutoplay(); autoplayID = setInterval(nextAuto, autoplayDelay); }
+      function stopAutoplay(){ if(autoplayID) clearInterval(autoplayID); autoplayID = null; }
+      function resetAutoplay(){ stopAutoplay(); startAutoplay(); }
+
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', startAutoplay);
+      window.addEventListener('resize', ()=> setPosition());
+
+      assignRandomVideos();
+      setPosition();
+      playActive();
+      startAutoplay();
+
+      if('ontouchstart' in window){
+        const hint = document.createElement('div');
+        hint.style.position = 'absolute';
+        hint.style.left = '12px';
+        hint.style.bottom = '12px';
+        hint.style.color = 'rgba(255,255,255,0.9)';
+        hint.style.fontWeight = '700';
+        hint.style.fontSize = '13px';
+        hint.style.zIndex = '60';
+        hint.innerText = 'Swipe to change';
+        slider.appendChild(hint);
+        setTimeout(()=> hint.style.opacity = '0.6', 100);
+      }
+    })();
+
+    // -------------------------
+    // Promo video modal logic (unchanged)
+    // -------------------------
+    (function(){
+      const right = document.getElementById('promoRight');
+      const overlay = document.getElementById('videoOverlay');
+      const frameHost = document.getElementById('videoFrame');
+      const closeBtn = document.getElementById('videoClose');
+
+      function openVideo(src){
+        if(!src) return;
+        overlay.classList.add('open');
+        overlay.setAttribute('aria-hidden','false');
+        document.body.classList.add('modal-open');
+        frameHost.innerHTML = '<iframe allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen src="'+src+'"></iframe>';
+        closeBtn?.focus();
+      }
+
+      function closeVideo(){
+        overlay.classList.remove('open');
+        overlay.setAttribute('aria-hidden','true');
+        document.body.classList.remove('modal-open');
+        frameHost.innerHTML = '';
+        right?.focus();
+      }
+
+      right?.addEventListener('click', ()=>{
+        openVideo(right.dataset.video || 'https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1&rel=0');
+      });
+      right?.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          right.click();
+        }
+      });
+
+      closeBtn?.addEventListener('click', closeVideo);
+      overlay?.addEventListener('click', (e)=>{ if(e.target === overlay) closeVideo(); });
+      window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape' && overlay.classList.contains('open')) closeVideo(); });
+    })();
+
+    // Footer year
+    document.getElementById('year')?.textContent && (document.getElementById('year').textContent = new Date().getFullYear());
+
+    // Populate extended footer year and wire newsletter
+    (function(){
+      const el = document.getElementById('ml-year');
+      if(el) el.textContent = new Date().getFullYear();
+      const btn = document.getElementById('ml-news-submit');
+      const input = document.getElementById('ml-news-email');
+      if(btn && input){
+        btn.addEventListener('click', function(){
+          const email = input.value.trim();
+          if(!email || !/^\S+@\S+\.\S+$/.test(email)){
+            input.style.outline = '2px solid rgba(255,100,80,0.9)';
+            input.focus();
+            return;
+          }
+          btn.textContent = 'Sent';
+          btn.disabled = true;
+          input.value = '';
+          setTimeout(()=>{ btn.textContent = 'Send'; btn.disabled = false; }, 2200);
+        });
+      }
+    })();
+  </script>
+  
+  
+</body>
+
+</html>
