@@ -6,11 +6,18 @@ This repository contains the VSL Market website - a B2B Hair & Accessories Procu
 
 This repository is configured for **GitHub Codespaces**, allowing you to edit and preview the website directly in your browser without any local setup!
 
-### Launch Codespaces:
-1. Click the green **"Code"** button on GitHub
-2. Select the **"Codespaces"** tab
-3. Click **"Create codespace on [branch-name]"**
-4. Wait for the environment to load (first time takes ~2-3 minutes)
+### Option 1: Direct Link (Easiest!)
+Click this link to create your codespace instantly:
+- **[Launch Codespace Now](https://github.com/jamesfjo/mybranch/codespaces/new?branch=copilot/build-website-for-vsl-market)** ← Click here!
+
+### Option 2: From Repository Page
+1. Go to the repository page on GitHub: `https://github.com/jamesfjo/mybranch`
+2. Click the green **"Code"** button (top-right, above the file list)
+3. Select the **"Codespaces"** tab in the dropdown
+4. Click **"Create codespace on [branch-name]"**
+5. Wait for the environment to load (first time takes ~2-3 minutes)
+
+**Can't find the Code button?** See [CODESPACES_SETUP.md](CODESPACES_SETUP.md) for detailed instructions with screenshots.
 
 ### Start the Development Server:
 Once your codespace is ready, run:
