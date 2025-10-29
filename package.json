@@ -1,0 +1,17 @@
+{
+  "name": "vsl-market-website",
+  "version": "1.0.0",
+  "description": "VSL Market - B2B Hair & Accessories Procurement Website",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "website",
+    "vsl",
+    "market"
+  ],
+  "author": "VSL Market",
+  "license": "ISC"
+}
